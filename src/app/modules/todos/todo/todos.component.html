@@ -1,0 +1,20 @@
+<header class="header">
+    <div class="title"><input type="text" [(ngModel)]="title"></div>
+    <div class="submit"><button (click)="add()"> Adicionar</button></div>
+</header>
+<div class="content">
+    <table>
+        <thead>
+            <th>Titulo</th>
+            <th>Status</th>
+            <th>Remover</th>
+        </thead>
+        <tbody>
+            <tr *ngFor="let todo of todos$ | async">
+                <td> {{todo.id }} - {{todo.title}}</td>
+                <td> <input type="checkbox" [checked]="todo.completed" (change)="complete(todo.id,$event)" /></td>
+                <td> <button (click)="remove(todo.id)">x</button></td>
+            </tr>
+        </tbody>
+    </table>
+</div>
