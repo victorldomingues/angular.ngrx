@@ -1,4 +1,4 @@
-# REDUX PARTTERN WITH ANGULAR AND NGRX
+# REDUX PATTERN WITH ANGULAR AND NGRX
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
 
